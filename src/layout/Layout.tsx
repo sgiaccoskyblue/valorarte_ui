@@ -5,7 +5,7 @@ const Layout: FC = ({ children }) => {
   return (
     <React.Fragment>
       <Header />
-      <main className='main-content'>{children}</main>
+      <main>{children}</main>
     </React.Fragment>
   );
 };
