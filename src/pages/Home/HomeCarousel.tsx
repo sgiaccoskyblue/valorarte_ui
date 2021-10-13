@@ -1,6 +1,7 @@
 import { Carousel } from 'react-carousel-minimal';
+import './HomeCarousel.css';
 
-function App() {
+function HomeCarousel() {
   const data = [
     {
       image: 'https://wallpapercave.com/wp/wp3188318.jpg',
@@ -11,7 +12,7 @@ function App() {
   ];
 
   return (
-    <div className='App'>
+    <div className='HomeCarousel'>
       <div style={{ textAlign: 'center' }}>
         <div>
           <Carousel
@@ -37,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomeCarousel;

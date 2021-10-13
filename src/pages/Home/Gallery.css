@@ -1,0 +1,17 @@
+.img-wrapper:hover .hover-zoom{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.img-title {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  font-size: xx-large;
+  cursor: pointer;
+}
+.img-wrapper:hover .img-title {
+  opacity: 1;
+}

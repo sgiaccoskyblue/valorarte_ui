@@ -1,7 +1,8 @@
 import React from 'react';
-import Carousel from './Carousel';
+import Carousel from './HomeCarousel';
 import Separator from './Separator';
 import { Grid } from '@mui/material';
+import Gallery from './Gallery';
 
 function Home() {
   return (
@@ -29,9 +30,7 @@ function Home() {
           </p>
         </Grid>
       </Grid>
-      <div style={{ width: '100%', textAlign: 'center' }}>
-        <h2>Lorem ipsum</h2>
-      </div>
+      <Gallery></Gallery>
     </div>
   );
 }

@@ -1,0 +1,4 @@
+.carousel-container {
+    /* override library style to fit mobile screen */
+    max-height: 100% !important;
+}
