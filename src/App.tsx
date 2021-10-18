@@ -1,17 +1,11 @@
-import React from 'react'
-import {
-  BrowserRouter as Router, 
-  Switch,
-  Route
-} from 'react-router-dom'
-import Layout from './layout/Layout'
-import Home from './pages/Home'
+import { FC } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Layout from './layout/main';
+import Home from './pages/Home';
 
-import './App.css';
-
-function App() {
+const App: FC = () => {
   return (
-    <div>
+    <>
       <Router>
         <Layout>
           <Switch>
@@ -19,8 +13,8 @@ function App() {
           </Switch>
         </Layout>
       </Router>
-    </div>
+    </>
   );
-}
+};
 
 export default App;
