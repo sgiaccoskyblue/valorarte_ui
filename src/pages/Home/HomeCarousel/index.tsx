@@ -1,7 +1,8 @@
+import { FC } from 'react';
 import { Carousel } from 'react-carousel-minimal';
 import './HomeCarousel.css';
 
-function HomeCarousel() {
+const HomeCarousel: FC = () => {
   const data = [
     {
       image: 'https://wallpapercave.com/wp/wp3188318.jpg',
@@ -36,6 +37,6 @@ function HomeCarousel() {
       </div>
     </div>
   );
-}
+};
 
 export default HomeCarousel;

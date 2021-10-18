@@ -1,23 +1,22 @@
-import * as React from 'react';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
-import { makeStyles } from '@mui/styles';
 import { useState, useEffect } from 'react';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import Drawer from '@mui/material/Drawer';
 import AppBar from '@mui/material/AppBar';
 import Menu from '@mui/icons-material/Menu';
+import useStyles from './styles';
 
 const headersData = [
   {
-    label: 'casting',
+    label: 'Casting',
     href: '/casting',
   },
   {
-    label: 'nosotros',
+    label: 'Nosotros',
     href: '/nosotros',
   },
   {
@@ -26,36 +25,8 @@ const headersData = [
   },
 ];
 
-const useStyles = makeStyles(() => ({
-  header: {
-    backgroundColor: 'black',
-  },
-  logo: {
-    fontFamily: 'Work Sans, sans-serif',
-    fontWeight: 600,
-    color: '#FFFEFE',
-    textAlign: 'left',
-  },
-  menuButton: {
-    fontFamily: 'Open Sans, sans-serif',
-    fontWeight: 700,
-    size: '18px',
-    marginLeft: '38px',
-  },
-  toolbar: {
-    display: 'flex',
-    backgroundColor: 'black',
-    justifyContent: 'space-between',
-  },
-  drawerContainer: {
-    padding: '20px 30px',
-    backgroundColor: 'black',
-    height: '100%',
-  },
-}));
-
 export default function Header() {
-  const { header, logo, menuButton, toolbar, drawerContainer } = useStyles();
+  const { header, logo, menuButton, toolbar, drawerContainer, drawerChoices } = useStyles();
 
   const [state, setState] = useState({
     mobileView: false,
@@ -129,7 +100,7 @@ export default function Header() {
           {...{
             to: href,
             color: 'inherit',
-            style: { textDecoration: 'none', color: 'white' },
+            className: drawerChoices,
             key: label,
           }}
         >

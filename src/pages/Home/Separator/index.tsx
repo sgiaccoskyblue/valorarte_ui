@@ -1,4 +1,6 @@
-const Separator = () => (
+import { FC } from 'react';
+
+const Separator: FC = () => (
   <div style={{ backgroundColor: '#713380', width: '100%', height: '2vh' }}></div>
 );
 

@@ -1,10 +1,10 @@
-import React from 'react';
+import { FC } from 'react';
 import Carousel from './HomeCarousel';
 import Separator from './Separator';
 import { Grid } from '@mui/material';
 import Gallery from './Gallery';
 
-function Home() {
+const Home: FC = () => {
   return (
     <div className='Home'>
       <Carousel></Carousel>
