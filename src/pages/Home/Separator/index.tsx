@@ -1,7 +1,10 @@
 import { FC } from 'react';
+import useStyles from './styles';
 
-const Separator: FC = () => (
-  <div style={{ backgroundColor: '#713380', width: '100%', height: '2vh' }}></div>
-);
+const Separator: FC = () => {
+  const { separator } = useStyles();
+
+  return <div className={separator}></div>;
+};
 
 export default Separator;

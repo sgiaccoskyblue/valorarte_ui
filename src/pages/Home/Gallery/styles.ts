@@ -16,6 +16,7 @@ const useStyles = createUseStyles({
     },
   },
   imgWrapper: {
+    display: 'block !important',
     overflow: 'hidden !important',
     width: '100% !important',
     height: '400px !important',
