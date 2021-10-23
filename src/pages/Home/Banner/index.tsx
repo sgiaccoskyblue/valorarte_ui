@@ -15,7 +15,7 @@ const Banner: FC = () => {
         className={classes.img}
       ></img>
       <div className={classes.imgText}>
-        <h3> Lorem ipsum SUA</h3>
+        <h3 className='text-white font-bold text-md'> Lorem ipsum SUA</h3>
         <RoundedButton>
           Visitar
         </RoundedButton>
