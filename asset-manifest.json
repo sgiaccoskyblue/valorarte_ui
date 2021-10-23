@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/valorarte_ui/static/css/main.b19f25f6.chunk.css",
+    "main.js": "/valorarte_ui/static/js/main.2604707f.chunk.js",
+    "main.js.map": "/valorarte_ui/static/js/main.2604707f.chunk.js.map",
+    "runtime-main.js": "/valorarte_ui/static/js/runtime-main.463053c4.js",
+    "runtime-main.js.map": "/valorarte_ui/static/js/runtime-main.463053c4.js.map",
+    "static/css/2.ad23c284.chunk.css": "/valorarte_ui/static/css/2.ad23c284.chunk.css",
+    "static/js/2.67330286.chunk.js": "/valorarte_ui/static/js/2.67330286.chunk.js",
+    "static/js/2.67330286.chunk.js.map": "/valorarte_ui/static/js/2.67330286.chunk.js.map",
+    "index.html": "/valorarte_ui/index.html",
+    "static/css/2.ad23c284.chunk.css.map": "/valorarte_ui/static/css/2.ad23c284.chunk.css.map",
+    "static/css/main.b19f25f6.chunk.css.map": "/valorarte_ui/static/css/main.b19f25f6.chunk.css.map",
+    "static/js/2.67330286.chunk.js.LICENSE.txt": "/valorarte_ui/static/js/2.67330286.chunk.js.LICENSE.txt",
+    "static/media/ballet.6097cc1b.jpeg": "/valorarte_ui/static/media/ballet.6097cc1b.jpeg",
+    "static/media/cameraman.0321d192.jpeg": "/valorarte_ui/static/media/cameraman.0321d192.jpeg",
+    "static/media/costumes.70de73fb.jpeg": "/valorarte_ui/static/media/costumes.70de73fb.jpeg",
+    "static/media/saxo.73fd26c3.webp": "/valorarte_ui/static/media/saxo.73fd26c3.webp",
+    "static/media/shooting.4732adb4.jpeg": "/valorarte_ui/static/media/shooting.4732adb4.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.463053c4.js",
+    "static/css/2.ad23c284.chunk.css",
+    "static/js/2.67330286.chunk.js",
+    "static/css/main.b19f25f6.chunk.css",
+    "static/js/main.2604707f.chunk.js"
+  ]
+}
