@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/valorarte_ui/static/css/main.b19f25f6.chunk.css",
-    "main.js": "/valorarte_ui/static/js/main.2604707f.chunk.js",
-    "main.js.map": "/valorarte_ui/static/js/main.2604707f.chunk.js.map",
+    "main.js": "/valorarte_ui/static/js/main.195032d4.chunk.js",
+    "main.js.map": "/valorarte_ui/static/js/main.195032d4.chunk.js.map",
     "runtime-main.js": "/valorarte_ui/static/js/runtime-main.463053c4.js",
     "runtime-main.js.map": "/valorarte_ui/static/js/runtime-main.463053c4.js.map",
     "static/css/2.ad23c284.chunk.css": "/valorarte_ui/static/css/2.ad23c284.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.ad23c284.chunk.css",
     "static/js/2.67330286.chunk.js",
     "static/css/main.b19f25f6.chunk.css",
-    "static/js/main.2604707f.chunk.js"
+    "static/js/main.195032d4.chunk.js"
   ]
 }
