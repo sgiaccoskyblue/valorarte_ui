@@ -44,7 +44,7 @@ const Home: FC = () => {
       </SlideInAnimation>
       <div className={classes.textContainer}>
         <SlideInAnimation initialXValue={0} delay={0}>
-          <h2 className={classes.text}>
+          <h2 className='text-white font-bold text-xl'>
             "Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit."
           </h2>
         </SlideInAnimation>

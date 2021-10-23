@@ -7,10 +7,6 @@ const useStyles = createUseStyles({
     paddingBottom: '60px',
     backgroundColor: '#2e2e2e',
   },
-  text: { color: 'white' },
-  margin: {
-    margin: '60px',
-  },
   img: {
     width: '100%',
     height: '100%',

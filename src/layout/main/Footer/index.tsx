@@ -28,7 +28,7 @@ const Footer: FC = () => {
               <div className='container mx-auto px-6'>
                 <div className='sm:flex sm:mt-8 md:max-w-md sm:max-w-lg'>
                   <div className='flex flex-col'>
-                    <p className='text-white mb-6'> Lorem ipsum </p>
+                    <p className='text-white mb-6 text-md font-bold'> Lorem ipsum </p>
                     <RoundedButton>Ingresar</RoundedButton>
                   </div>
                 </div>
@@ -40,7 +40,7 @@ const Footer: FC = () => {
       <div className='container mx-auto px-6'>
         <div className='mt-16 border-t-2 border-gray-300 flex flex-col items-center'>
           <div className='sm:w-2/3 text-center py-6'>
-            <p className='text-sm text-white font-bold mb-2'>
+            <p className='text-sm text-white mb-2'>
               © 2021 Valorarte SUA - Desarrollado por White Ball Media
             </p>
           </div>
