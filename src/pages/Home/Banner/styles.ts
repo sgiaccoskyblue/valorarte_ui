@@ -10,6 +10,7 @@ const useStyles = createUseStyles({
     textAlign: 'center',
     width: '100%',
     overflow: 'hidden',
+    display: 'flex',
   },
   imgText: {
     position: 'absolute',
@@ -21,10 +22,6 @@ const useStyles = createUseStyles({
     height: '80px',
     justifyContent: 'space-between',
     flexDirection: 'column',
-  },
-  button: {
-    backgroundColor: '#713380 !important',
-    borderRadius: '30px !important'
   },
 });
 

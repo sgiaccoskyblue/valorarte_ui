@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import useStyles from './styles';
 import costumes from 'assets/img/costumes.jpeg';
-import Button from '@mui/material/Button';
+import RoundedButton from 'components/RoundedButton';
 
 const Banner: FC = () => {
   const classes = useStyles();
@@ -16,9 +16,9 @@ const Banner: FC = () => {
       ></img>
       <div className={classes.imgText}>
         <h3> Lorem ipsum SUA</h3>
-        <Button variant='contained' disableElevation className={classes.button}>
+        <RoundedButton>
           Visitar
-        </Button>
+        </RoundedButton>
       </div>
     </div>
   );
