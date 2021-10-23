@@ -31,7 +31,7 @@ const Gallery: FC = () => {
   return (
     <>
       <div className={classes.title}>
-        <h2>Lorem ipsum</h2>
+        <h2 className='m-5 font-bold text-lg'>Lorem ipsum</h2>
       </div>
       <Grid container>
         {itemData.map(item => (
