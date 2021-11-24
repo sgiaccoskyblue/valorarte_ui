@@ -1,5 +1,4 @@
 import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -14,6 +13,10 @@ const headersData = [
   {
     label: 'Casting',
     href: '/casting',
+  },
+  {
+    label: 'Perfil',
+    href: '/profile',
   },
   {
     label: 'Nosotros',
@@ -119,7 +122,7 @@ export default function Header() {
   const getMenuButtons = () => {
     return headersData.map(({ label, href }) => {
       return (
-        <Button
+        <Link
           {...{
             key: label,
             color: 'inherit',
@@ -128,7 +131,7 @@ export default function Header() {
           }}
         >
           {label}
-        </Button>
+        </Link>
       );
     });
   };
