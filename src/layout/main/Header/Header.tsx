@@ -20,11 +20,11 @@ const headersData = [
   },
   {
     label: 'Nosotros',
-    href: '/nosotros',
+    href: '/home',
   },
   {
     label: 'Ingresar',
-    href: '/ingresar',
+    href: '/login',
   },
 ];
 
