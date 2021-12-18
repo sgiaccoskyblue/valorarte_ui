@@ -1,0 +1,26 @@
+{
+  "name": "Juan Pérez",
+  "occupation": "Actor",
+  "photos": [
+    {
+      "id": "asdf",
+      "url": "https://unsplash.com/photos/KIPqvvTOC1s/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8bWFufHwwfHx8fDE2Mzk2OTkzMjA&force=true"
+    },
+    {
+      "id": "aaqq",
+      "url": "https://unsplash.com/photos/KIPqvvTOC1s/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8bWFufHwwfHx8fDE2Mzk2OTkzMjA&force=true"
+    },
+    {
+      "id": "zxcs",
+      "url": "https://unsplash.com/photos/KIPqvvTOC1s/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8bWFufHwwfHx8fDE2Mzk2OTkzMjA&force=true"
+    }
+  ],
+  "video": {
+    "id": "zxcvnkjcx",
+    "url": "https://www.youtube.com/watch?v=asdf"
+  },
+  "birthDate": "1996-12-16",
+  "description": "The standard aims to provide a well-defined, unambiguous method of representing calendar dates and times in worldwide communications, especially to avoid misinterpreting numeric dates and times when such data is transferred between countries with different conventions for writing numeric dates and times.",
+  "height": 180,
+  "weight": 80
+}

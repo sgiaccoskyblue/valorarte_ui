@@ -1,35 +1,36 @@
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import MenuItem from '@mui/material/MenuItem';
-import IconButton from '@mui/material/IconButton';
-import Drawer from '@mui/material/Drawer';
-import AppBar from '@mui/material/AppBar';
-import Menu from '@mui/icons-material/Menu';
-import useStyles from './styles';
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import MenuItem from "@mui/material/MenuItem";
+import IconButton from "@mui/material/IconButton";
+import Drawer from "@mui/material/Drawer";
+import AppBar from "@mui/material/AppBar";
+import Menu from "@mui/icons-material/Menu";
+import useStyles from "./styles";
 
 const headersData = [
   {
-    label: 'Casting',
-    href: '/casting',
+    label: "Casting",
+    href: "/casting",
   },
   {
-    label: 'Perfil',
-    href: '/profile',
+    label: "Perfil",
+    href: "/profile",
   },
   {
-    label: 'Nosotros',
-    href: '/home',
+    label: "Nosotros",
+    href: "/home",
   },
   {
-    label: 'Ingresar',
-    href: '/login',
+    label: "Ingresar",
+    href: "/login",
   },
 ];
 
 export default function Header() {
-  const { header, logo, menuButton, toolbar, drawerContainer, drawerChoices } = useStyles();
+  const { header, logo, menuButton, toolbar, drawerContainer, drawerChoices } =
+    useStyles();
 
   const [state, setState] = useState({
     mobileView: false,
@@ -41,16 +42,16 @@ export default function Header() {
   useEffect(() => {
     const setResponsiveness = () => {
       return window.innerWidth < 900
-        ? setState(prevState => ({ ...prevState, mobileView: true }))
-        : setState(prevState => ({ ...prevState, mobileView: false }));
+        ? setState((prevState) => ({ ...prevState, mobileView: true }))
+        : setState((prevState) => ({ ...prevState, mobileView: false }));
     };
 
     setResponsiveness();
 
-    window.addEventListener('resize', () => setResponsiveness());
+    window.addEventListener("resize", () => setResponsiveness());
 
     return () => {
-      window.removeEventListener('resize', () => setResponsiveness());
+      window.removeEventListener("resize", () => setResponsiveness());
     };
   }, []);
 
@@ -64,17 +65,19 @@ export default function Header() {
   };
 
   const displayMobile = () => {
-    const handleDrawerOpen = () => setState(prevState => ({ ...prevState, drawerOpen: true }));
-    const handleDrawerClose = () => setState(prevState => ({ ...prevState, drawerOpen: false }));
+    const handleDrawerOpen = () =>
+      setState((prevState) => ({ ...prevState, drawerOpen: true }));
+    const handleDrawerClose = () =>
+      setState((prevState) => ({ ...prevState, drawerOpen: false }));
 
     return (
       <Toolbar className={header}>
         <IconButton
           {...{
-            edge: 'start',
-            color: 'inherit',
-            'aria-label': 'menu',
-            'aria-haspopup': 'true',
+            edge: "start",
+            color: "inherit",
+            "aria-label": "menu",
+            "aria-haspopup": "true",
             onClick: handleDrawerOpen,
           }}
         >
@@ -83,7 +86,7 @@ export default function Header() {
 
         <Drawer
           {...{
-            anchor: 'left',
+            anchor: "left",
             open: drawerOpen,
             onClose: handleDrawerClose,
           }}
@@ -102,7 +105,7 @@ export default function Header() {
         <Link
           {...{
             to: href,
-            color: 'inherit',
+            color: "inherit",
             className: drawerChoices,
             key: label,
           }}
@@ -114,7 +117,7 @@ export default function Header() {
   };
 
   const valorarteLogo = (
-    <Typography variant='h6' component='h1' className={logo}>
+    <Typography variant="h6" component="h1" className={logo}>
       Valorarte
     </Typography>
   );
@@ -125,7 +128,7 @@ export default function Header() {
         <Link
           {...{
             key: label,
-            color: 'inherit',
+            color: "inherit",
             to: href,
             className: menuButton,
           }}
@@ -136,5 +139,9 @@ export default function Header() {
     });
   };
 
-  return <AppBar>{mobileView ? displayMobile() : displayDesktop()}</AppBar>;
+  return (
+    <AppBar position="relative">
+      {mobileView ? displayMobile() : displayDesktop()}
+    </AppBar>
+  );
 }
